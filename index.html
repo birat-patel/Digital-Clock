@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digital clock</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            background: rgb(35, 35, 35);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+        }
+
+        pre {
+            font-size: 21px;
+            padding: 7px;
+        }
+
+        .container {
+            border: 2px solid rgb(75, 70, 70);
+            border-radius: 21px;
+            height: 200px;
+            width: 400px;
+            /* background: linear-gradient(90deg, red, blue);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; */
+        }
+
+        .time {
+            display: flex;
+            justify-content: center;
+        }
+
+        .time .box {
+            width: 75px;
+            padding: 7px 0px;
+            border: 1px solid rgb(75, 70, 70);
+            border-radius: 9px;
+            margin: 30px 11px 11px 11px;
+            text-align: center;
+        }
+
+        .time .box .clock {
+            font-size: 44px;
+        }
+
+        .day {
+            text-align: center;
+            font-size: 44px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <pre>D I G I T A L  C L O C K </pre>
+        <div class="container">
+            <div class="time">
+                <div class="box">
+                    <div class="clock">00</div>
+                    <p>hour</p>
+                </div>
+                <div class="box">
+                    <div class="clock">00</div>
+                    <p>minute</p>
+                </div>
+                <div class="box">
+                    <div class="clock">00</div>
+                    <p>second</p>
+                </div>
+            </div>
+            <div class="day clock">
+                <h3>day</h3>
+            </div>
+        </div>
+    </main>
+    <script>
+        setInterval(() => {
+            let a = document.getElementsByClassName("clock")
+            const m = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            let b = new Date()
+            a[0].innerHTML = b.getHours()
+            a[1].innerHTML = b.getMinutes()
+            a[2].innerHTML = b.getSeconds()
+            a[3].innerHTML = `${b.getDate()} ${m[b.getMonth()]} ${b.getFullYear()}`
+        }, 1000)
+    </script>
+</body>
+
+</html>
