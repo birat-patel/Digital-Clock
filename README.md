@@ -22,7 +22,7 @@ Displays current **time (HH:MM:SS)** and **date (DD MMM YYYY)** in real-time.
 [View Live Clock](https://birat-patel.github.io/Digital-Clock/)
 
 ## Screenshot
-![Digital Clock Screenshot](screenshot.png)
+![Digital Clock Screenshot](digital-clock_output_.jpeg)
 
 ## Author
 Birat Kumar 
