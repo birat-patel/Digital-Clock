@@ -18,7 +18,7 @@ Displays current **time (HH:MM:SS)** and **date (DD MMM YYYY)** in real-time.
 1. Clone the repository: 
 2. Open `index.html` in your browser
 
-## Live Demo
+## View Live Project
 [View Live Clock](https://birat-patel.github.io/Digital-Clock/)
 
 ## Screenshot
